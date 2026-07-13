@@ -86,29 +86,39 @@ async function showTaskManager() {
         console.error("Could Not Fetch Data:", error);
     }
 }
-
 function generateTable(data) {
 
-    let allData = (currentPage - 1) * itemsPerPage;
 
-    let rows = data.map((input, index) =>
+    let alldata = (currentPage - 1) * itemsPerPage;
 
-        ` <tr>
-                <td>${allData + index + 1}</td>
+    let rows = data.map((input, index) => {
+
+        let statusClass = "";
+
+        if (input.taskStatus === "Pending") {
+            statusClass = "pending";
+        } else if (input.taskStatus === "In Progress") {
+            statusClass = "In-Progress";
+        } else if (input.taskStatus === "Completed") {
+            statusClass = "Completed";
+        }
+
+        return `
+            <tr>
+                <td>${alldata + index + 1}</td>
                 <td>${input.taskName}</td>
                 <td>${input.taskDescription}</td>
                 <td>${input.taskPriority}</td>
                 <td>${input.taskDeadline}</td>
-                <td>${input.taskStatus}</td>
+                <td class="${statusClass}">${input.taskStatus}</td>
                 <td>
                     <button class="edit-task" data-id="${input.id}">Edit</button>
                     <button class="delete-task" data-id="${input.id}">Delete</button>
                 </td>
             </tr>
-        `).join("");
+        `}).join("");
 
     document.getElementById("taskTable").innerHTML = rows;
-
 }
 
 taskInputSubmit.addEventListener("click", async () => {
@@ -355,6 +365,7 @@ function clearForm() {
     document.getElementById("taskPriority").selectedIndex = 0;
     document.getElementById("taskDeadline").value = "";
     document.getElementById("taskStatus").selectedIndex = 0;
+    document.getElementById("taskSearch").value = "";
     editId = null;
 }
 
@@ -501,6 +512,10 @@ function refresh() {
     categories.find = "";
 
     status.find = "";
+
+    clearForm();
+
+    pageChange();
 
     showTaskManager();
 
