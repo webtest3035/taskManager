@@ -1,0 +1,204 @@
+{
+    "tasks": [
+        {
+            "taskName": "Daily Report",
+            "taskDescription": "Please Send Me The Daily Report It Is Pending",
+            "taskPriority": "Urgent",
+            "taskDeadline": "2026-06-05",
+            "taskStatus": "Pending",
+            "id": "UoMdayTp9qA"
+        },
+        {
+            "taskName": "Team Meeting",
+            "taskDescription": "Schedule And Conduct Weekly Team Meeting",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-06-10",
+            "taskStatus": "Pending",
+            "id": "TskA91xYpQ1"
+        },
+        {
+            "taskName": "Bug Fix",
+            "taskDescription": "Resolve Critical Login Issue Reported By Users",
+            "taskPriority": "Urgent",
+            "taskDeadline": "2026-06-08",
+            "taskStatus": "In Progress",
+            "id": "Bf72LmQx8Rt"
+        },
+        {
+            "taskName": "Database Backup",
+            "taskDescription": "Create And Verify Weekly Database Backup",
+            "taskPriority": "High",
+            "taskDeadline": "2026-06-12",
+            "taskStatus": "Completed",
+            "id": "DbK9sT4mPn2"
+        },
+        {
+            "taskName": "UI Design",
+            "taskDescription": "Prepare New Dashboard UI Mockups",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-06-15",
+            "taskStatus": "Pending",
+            "id": "UiM7nV3qLd5"
+        },
+        {
+            "taskName": "Code Review",
+            "taskDescription": "Review Pull Requests From Development Team",
+            "taskPriority": "Low",
+            "taskDeadline": "2026-06-18",
+            "taskStatus": "In Progress",
+            "id": "CrP4xJ8sWu9"
+        },
+        {
+            "taskName": "Documentation",
+            "taskDescription": "Update API Documentation For Latest Release",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-06-22",
+            "taskStatus": "Completed",
+            "id": "DcF6qL2zEr7"
+        },
+        {
+            "taskName": "Security Audit",
+            "taskDescription": "Perform Internal Security Assessment",
+            "taskPriority": "Urgent",
+            "taskDeadline": "2026-06-09",
+            "taskStatus": "Pending",
+            "id": "SaN8yK5mHt3"
+        },
+        {
+            "taskName": "Client Follow-up",
+            "taskDescription": "Contact Clients Regarding Project Feedback",
+            "taskPriority": "High",
+            "taskDeadline": "2026-06-14",
+            "taskStatus": "In Progress",
+            "id": "CfR3wP7xGs6"
+        },
+        {
+            "taskName": "Testing",
+            "taskDescription": "Execute Regression Test Cases",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-06-20",
+            "taskStatus": "Pending",
+            "id": "TsL5vN1qZd8"
+        },
+        {
+            "taskName": "Server Maintenance",
+            "taskDescription": "Perform Scheduled Server Maintenance",
+            "taskPriority": "High",
+            "taskDeadline": "2026-06-25",
+            "taskStatus": "Completed",
+            "id": "SmQ2kJ9rXe4"
+        },
+        {
+            "taskName": "Training Session",
+            "taskDescription": "Conduct Employee Training On New Tools",
+            "taskPriority": "Low",
+            "taskDeadline": "2026-06-28",
+            "taskStatus": "Pending",
+            "id": "TrW8pM4sYu1"
+        },
+        {
+            "taskName": "Performance Review",
+            "taskDescription": "Complete Quarterly Employee Evaluations",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-06-30",
+            "taskStatus": "In Progress",
+            "id": "PrH7nX2vQk5"
+        },
+        {
+            "taskName": "Marketing Plan",
+            "taskDescription": "Prepare Marketing Strategy For Next Quarter",
+            "taskPriority": "High",
+            "taskDeadline": "2026-07-02",
+            "taskStatus": "Pending",
+            "id": "MpC6zL8tRw9"
+        },
+        {
+            "taskName": "Invoice Processing",
+            "taskDescription": "Process Pending Vendor Invoices",
+            "taskPriority": "Urgent",
+            "taskDeadline": "2026-06-07",
+            "taskStatus": "Completed",
+            "id": "IpD4mV1xSn3"
+        },
+        {
+            "taskName": "Data Analysis",
+            "taskDescription": "Analyze Customer Engagement Metrics",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-07-05",
+            "taskStatus": "Pending",
+            "id": "DaY9qT5kLm7"
+        },
+        {
+            "taskName": "Feature Development",
+            "taskDescription": "Implement New Notification Module",
+            "taskPriority": "High",
+            "taskDeadline": "2026-07-08",
+            "taskStatus": "In Progress",
+            "id": "FdU2rP6xWn4"
+        },
+        {
+            "taskName": "Content Review",
+            "taskDescription": "Review Website Content For Accuracy",
+            "taskPriority": "Low",
+            "taskDeadline": "2026-07-10",
+            "taskStatus": "Completed",
+            "id": "CoJ5sM8vYe2"
+        },
+        {
+            "taskName": "Customer Support",
+            "taskDescription": "Respond To High Priority Customer Tickets",
+            "taskPriority": "Urgent",
+            "taskDeadline": "2026-06-06",
+            "taskStatus": "In Progress",
+            "id": "CsX3nK7qRt8"
+        },
+        {
+            "taskName": "Project Planning",
+            "taskDescription": "Create Roadmap For Upcoming Project",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-07-12",
+            "taskStatus": "Pending",
+            "id": "PpL1wV9mZd6"
+        },
+        {
+            "taskName": "Resource Allocation",
+            "taskDescription": "Assign Resources To Active Projects",
+            "taskPriority": "High",
+            "taskDeadline": "2026-07-15",
+            "taskStatus": "Completed",
+            "id": "RaT8qX4sYu5"
+        },
+        {
+            "taskName": "System Upgrade",
+            "taskDescription": "Upgrade Internal Systems To Latest Version",
+            "taskPriority": "Urgent",
+            "taskDeadline": "2026-07-18",
+            "taskStatus": "Pending",
+            "id": "SuM6kP2rWn1"
+        },
+        {
+            "taskName": "Budget Review",
+            "taskDescription": "Review Department Budget Allocations",
+            "taskPriority": "Low",
+            "taskDeadline": "2026-07-20",
+            "taskStatus": "In Progress",
+            "id": "BrN9xL5tQe7"
+        },
+        {
+            "taskName": "Inventory Check",
+            "taskDescription": "Verify Office Equipment Inventory",
+            "taskPriority": "Medium",
+            "taskDeadline": "2026-07-22",
+            "taskStatus": "Completed",
+            "id": "IcP4mZ8vKs3"
+        },
+        {
+            "taskName": "Deployment",
+            "taskDescription": "Deploy Latest Application Release To Production",
+            "taskPriority": "Urgent",
+            "taskDeadline": "2026-07-25",
+            "taskStatus": "Completed",
+            "id": "DpQ7nW1xHt9"
+        }
+    ]
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <main>
+        <div class="headings">
+            <h1>Task Manager</h1>
+            <p class="heading-date" id="heading-date"></p>
+        </div>
+
+        <div class="task-status">
+            <div class="task-status-details1">
+                <p class="task-status-total" id="totalTask"></p>
+                <p class="task-status-details-heading">Total Task</p>
+            </div>
+            <div class="task-status-details2">
+                <p class="task-status-total" id="totalPendingTask"></p>
+                <p class="task-status-details-heading">Pending</p>
+            </div>
+            <div class="task-status-details3">
+                <p class="task-status-total" id="TotalInProgressTask"></p>
+                <p class="task-status-details-heading">In Progress</p>
+            </div>
+            <div class="task-status-details4">
+                <p class="task-status-total" id="TotalCompletedTask"></p>
+                <p class="task-status-details-heading">Completed</p>
+            </div>
+        </div>
+
+        <div class="task-form">
+            <div class="task-form-heading">
+                <h2> + Add New Task</h2>
+            </div>
+            <div class="task-form-data">
+
+                <div class="task-form-inputs">
+                    <label for="taskName">Name</label>
+                    <input type="text" id="taskName" placeholder="Type Here">
+
+                </div>
+                <div class="task-form-inputs">
+                    <label for="taskDiscription">Discription</label>
+                    <input type="text" id="taskDiscription" placeholder="Type Here">
+
+                </div>
+                <div class="task-form-inputs">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                        <option value="Urgent">Urgent</option>
+                    </select>
+
+                </div>
+                <div class="task-form-inputs">
+                    <label for="taskDeadline">Deadline</label>
+                    <input type="date" id="taskDeadline" placeholder="Type Here">
+                </div>
+
+                <div class="task-form-inputs">
+                    <label for="taskStatus">Status</label>
+                    <select id="taskStatus">
+                        <option value="Pending">Pending</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+
+                </div>
+
+                <button id="taskInputSubmit">+ Add Task</button>
+                <button id="taskUpdateSubmit">Update</button>
+            </div>
+        </div>
+
+        <div class="task-filters">
+
+            <div class="task-filters-heading">
+                <h2>Search & Filters</h2>
+            </div>
+
+            <div class="task-filters-box">
+                <div class="task-filters-input">
+                    <label for="taskSearch">Enter Task Name</label>
+                    <div class="task-filters-input-child">
+                        <input type="text" placeholder="Type Here" id="taskSearch">
+                        <button id="taskSearchSubmit">Search</button>
+                    </div>
+                </div>
+                <div class="task-filters-buttons" id="taskFiltersButtons">
+                    <button class="filter-button" id="deadLineFirstToLast">Deadline Fst/Lst</button>
+                    <button class="filter-button" id="deadLineLastToFirst">Deadline Lst/Fst</button>
+                    <button class="filter-button" id="lowPriority">Low Priority</button>
+                    <button class="filter-button" id="mediumPriority">Medium Priority</button>
+                    <button class="filter-button" id="highPriority">High Priority</button>
+                    <button class="filter-button" id="urgentPriority">Urgent Priority</button>
+                    <button class="filter-button" id="pendingTask">Pending</button>
+                    <button class="filter-button" id="inProgressTask">In Progress</button>
+                    <button class="filter-button" id="CompletedTask">Completed</button>
+                    <button class="refresh-button" id="refresh">Refresh</button>
+                </div>
+            </div>
+        </div>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th class="taskNamee">Nmae</th>
+                    <th class="tabelTaskDiscription"> Description </th>
+                    <th>Priority</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskTable"></tbody>
+        </table>
+
+    </main>
+</body>
+
+</html>
