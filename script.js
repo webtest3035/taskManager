@@ -10,6 +10,7 @@ const table = document.getElementById("table");
 const taskSearchSubmit = document.getElementById("taskSearchSubmit");
 const taskFiltersButtons = document.getElementById("taskFiltersButtons");
 const pagination = document.getElementById("pagination");
+const loading = document.getElementById("loading");
 
 let allTasks = 0;
 let currentPage = 1;
@@ -46,6 +47,8 @@ async function showTaskManager() {
     if (status.find) {
         url += `&${status.find}`;
     }
+
+    showLoading();
 
     try {
 
@@ -84,6 +87,9 @@ async function showTaskManager() {
 
     catch (error) {
         console.error("Could Not Fetch Data:", error);
+    }
+    finally{
+        hideLoading();
     }
 }
 function generateTable(data) {
@@ -144,6 +150,8 @@ taskInputSubmit.addEventListener("click", async () => {
         taskStatus,
     }
 
+    showLoading();
+
     try {
 
         let response = await fetch(tasksUrl, {
@@ -172,6 +180,9 @@ taskInputSubmit.addEventListener("click", async () => {
     catch (error) {
         console.error("Could Not Add Data:", error);
     }
+    finally{
+        hideLoading();
+    }
 
 })
 
@@ -194,6 +205,8 @@ async function deleteTask(id) {
         return;
     }
 
+    showLoading();
+
     try {
 
         await fetch(`${tasksUrl}/${id}`, {
@@ -207,6 +220,9 @@ async function deleteTask(id) {
     catch (error) {
         console.log(error);
     }
+    finally{
+        hideLoading();
+    }
 }
 
 let editId = null;
@@ -214,6 +230,8 @@ let editId = null;
 async function editTask(id) {
 
     pageChange();
+
+    showLoading();
 
     try {
 
@@ -238,6 +256,10 @@ async function editTask(id) {
 
     catch (error) {
         console.error(error);
+    }
+
+    finally{
+        hideLoading();
     }
 }
 
@@ -264,6 +286,8 @@ taskUpdateSubmit.addEventListener("click", async () => {
         taskStatus,
     }
 
+    showLoading();
+
     try {
         await fetch(`${tasksUrl}/${editId}`, {
 
@@ -287,6 +311,10 @@ taskUpdateSubmit.addEventListener("click", async () => {
     }
     catch (error) {
         console.error("Could Not Update Data:", error);
+    }
+
+    finally{
+        hideLoading();
     }
 
 })
@@ -370,6 +398,8 @@ function clearForm() {
 }
 
 taskFiltersButtons.addEventListener("click", (event) => {
+
+    clearForm();
 
     if (event.target.id === "deadLineFirstToLast") {
         deadLineFstToLst();
@@ -617,6 +647,7 @@ function next() {
         showTaskManager();
         createPagination();
         pageChange();
+        clearForm();
     }
 }
 
@@ -627,7 +658,18 @@ function previous() {
         showTaskManager();
         createPagination();
         pageChange();
+        clearForm();
     }
+}
+
+function showLoading() {
+    loading.style.display = "block";
+    table.style.display = "none"
+}
+
+function hideLoading() {
+    loading.style.display = "none";
+    table.style.display = "table"
 }
 
 

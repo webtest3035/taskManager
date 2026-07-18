@@ -408,6 +408,13 @@ tr:nth-child(even) {
     margin: 0rem 1rem;
 }
 
+ #loading {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    margin: 25rem 0rem;
+}
+
 @media (max-width: 64rem) {
 
     html {
