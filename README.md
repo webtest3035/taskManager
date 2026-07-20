@@ -7,3 +7,7 @@ Features :- track tasks filter by name, Priority, status, deadline
 Open This Project :- https://webtest3035.github.io/taskManager/
 
 Language Used :- HTML, CSS, JavaScript
+
+Image :- 
+
+![Home Page](img/Task-Manager.jpeg);
